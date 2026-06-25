@@ -1,70 +1,241 @@
-# Getting Started with Create React App
+# 🚌 Punjab Bus Connect — پنجاب بس کنیکٹ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A public bus guide app for first-time riders in Punjab, Pakistan.  
+> Built as part of the **CM Punjab Maryam Nawaz** public transport initiative.
 
-## Available Scripts
+![Punjab Bus Connect](https://img.shields.io/badge/Punjab-Bus%20Connect-green?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTQgMTZjMCAxLjEuOSAyIDIgMnMyLTAuOSAyLTItMC45LTItMi0yLTIgMC45LTIgMnptMTIgMGMwIDEuMS45IDIgMiAycy0yLTAuOS0yLTItMC45LTItMi0yLTIgMC45LTIgMnpNMiA0djEyaDJjMC0yLjIgMS44LTQgNC00czQgMS44IDQgNGg0YzAtMi4yIDEuOC00IDQtNHM0IDEuOCA0IDRoMlY0SDJ6Ii8+PC9zdmc+)
+![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📱 Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|
+ Splash Screen 
+|
+ Home Screen 
+|
+ Route Detail 
+|
+|
+---
+|
+---
+|
+---
+|
+|
+ 🚌 Loading Animation 
+|
+ Route Cards 
+|
+ Map + Stops 
+|
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🏠 **Home Screen** — Search bar, popular routes, quick access buttons
+- 🗺️ **Route Map** — Visual map with live bus position indicator
+- 🔍 **Route Finder** — Enter From → To and find matching routes
+- ⏰ **Live Timings** — Next bus arrival times at every stop
+- 🌐 **Bilingual** — Full English and Urdu (اردو) support
+- 📱 **Mobile First** — Designed like a native mobile app
+- 🎨 **Splash Screen** — Animated loading screen
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v16 or above)
+- npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/punjab-bus-connect.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Go into the folder
+cd punjab-bus-connect
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Start the app
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+App will open at **http://localhost:3000**
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🗂️ Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+punjab-bus-connect/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js          ← Main app (all screens)
+│   ├── App.css         ← Global styles
+│   └── index.js        ← Entry point
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛣️ Bus Routes Included
 
-### Analyzing the Bundle Size
+|
+ Route 
+|
+ From 
+|
+ To 
+|
+ Stops 
+|
+ Frequency 
+|
+|
+-------
+|
+------
+|
+----
+|
+-------
+|
+-----------
+|
+|
+ R1 
+|
+ Shahdara Terminal 
+|
+ Thokar Niaz Baig 
+|
+ 7 
+|
+ Every 8 min 
+|
+|
+ R4 
+|
+ Kalma Chowk 
+|
+ Airport 
+|
+ 5 
+|
+ Every 12 min 
+|
+|
+ R7 
+|
+ Data Darbar 
+|
+ Packages Mall 
+|
+ 6 
+|
+ Every 10 min 
+|
+|
+ R9 
+|
+ Sabzazar 
+|
+ Qila Gujjar Singh 
+|
+ 5 
+|
+ Every 15 min 
+|
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🛠️ Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+|
+ Technology 
+|
+ Purpose 
+|
+|
+---
+|
+---
+|
+|
+ React 18 
+|
+ Frontend framework 
+|
+|
+ JavaScript (JSX) 
+|
+ App logic 
+|
+|
+ CSS-in-JS 
+|
+ Styling 
+|
+|
+ OpenStreetMap 
+|
+ Map (coming soon) 
+|
+|
+ Firebase 
+|
+ Backend (coming soon) 
+|
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🗺️ Roadmap
 
-### Deployment
+- [x] Splash screen with animation
+- [x] Home screen with route cards
+- [x] Route detail with map
+- [x] Route finder (From → To)
+- [x] Live timings screen
+- [x] Urdu language support
+- [ ] Real GPS tracking
+- [ ] Firebase backend
+- [ ] Google Maps integration
+- [ ] Android APK (Play Store)
+- [ ] Push notifications for bus delays
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+MIT License © 2026 Punjab Bus Connect
+
+---
+
+## 🏛️ Government Initiative
+
+This app is built to support the **CM Punjab Maryam Nawaz** public bus service initiative, helping first-time riders navigate Punjab's public transport system easily.
+
+> *"Making public transport accessible for every citizen of Punjab"*
+
+---
+
+<div align="center">
+Made with ❤️ for the people of Punjab, Pakistan 🇵🇰
+</div>
