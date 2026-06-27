@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { fetchRoutes, seedRoutes } from "./firebase";
 
 const GREEN = "#1a7a3c";
 const LIGHT_GREEN = "#e8f5e9";
@@ -347,6 +348,14 @@ export default function App() {
   const [screen, setScreen] = useState("home");
   const [lang, setLang] = useState("en");
   const [selectedRoute, setSelectedRoute] = useState(null);
+  const [dbRoutes, setDbRoutes] = useState([]);
+
+  useEffect(() => {
+    fetchRoutes().then(data => {
+      if (data.length === 0) seedRoutes();
+      else setDbRoutes(data);
+    }).catch(() => {});
+  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => setSplash(false), 2500);
